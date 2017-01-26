@@ -48,36 +48,63 @@ p {
     font-size: 16px;
 }
 
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
 table {
-    border: 0;
-    width: 1024px;
+    background-color: #F0F0F0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: lightslategray;
 }
 
 th,
 td {
-    padding: 0px;
-    color: blue;
-    text-align: center;
+    padding: 15px;
 }
 
-div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+.container {
+    position: relative;
+    width: 50%;
 }
 
-div.img:hover {
-    color: white;
-    border: 1px solid #777;
-}
-
-div.img img {
+.image {
+    opacity: 1;
+    display: block;
     width: 100%;
     height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
