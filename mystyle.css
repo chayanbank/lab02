@@ -30,7 +30,8 @@ li a:hover:not(.active) {
 }
 
 body {
-    background-color: lightsteelblue;
+    background: url(img/sky.jpg) no-repeat center fixed;
+    background-size: cover;
 }
 
 h1 {
