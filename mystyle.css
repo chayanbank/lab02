@@ -47,6 +47,7 @@ h2 {
 
 p {
     font-family: "Verdana", Times, serif;
+    text-align: center;
     font-size: 16px;
 }
 
@@ -60,7 +61,7 @@ th {
 table {
     background-color: #F0F0F0;
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
 }
 
 th {
@@ -109,4 +110,20 @@ td {
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+div.figure {
+    width: 30%;
+    background-color: whitesmoke;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+
+img.scaled {
+    width: 100%;
 }
